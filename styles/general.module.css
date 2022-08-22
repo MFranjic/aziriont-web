@@ -1,0 +1,112 @@
+.header {
+    height: 95px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 50;
+    border: solid 1px rgba(0, 0, 0, 0.36);
+}
+
+.logo {
+    height: 61px;
+    cursor: pointer;
+}
+
+.button {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 38px;
+    width: 139px;
+    color: rgb(228, 228, 228);
+    background-color: transparent;   
+    font-family: 'Maven Pro';
+    font-weight: 400;
+    font-size: 16px;
+    border: 0;
+}
+
+.buttonBorder {
+    border-right: solid 1px rgb(228, 228, 228);
+}
+
+.button:hover {
+    color: white;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.title {
+    font-family: 'Maven Pro', Arial;
+    font-size: 50px;
+    font-weight: 500;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 130px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* #region Footer */
+.footer {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 50;
+    border: solid 1px rgba(0, 0, 0, 0.36);
+}
+
+.companyContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 253px;
+    height: 56px;
+}
+
+.companyAddress {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    width: 177px;
+    height: 48px;
+}
+
+.companyInfo {
+    font-family: 'Maven Pro', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(210, 210, 210, 0.682);
+    padding: 0;
+    margin: 0;
+}
+
+.companyLogo {
+    padding-top: 2px;
+    height: 61px;
+    opacity: 0.3;
+}
+
+/* #endregion */
+
