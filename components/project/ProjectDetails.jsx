@@ -7,8 +7,16 @@ class ProjectDetails extends Component {
 		return (
 			<div className={styles.detailsContainer}>
 				<div className={styles.title}>More info</div>
-				<div className={styles.description}></div>
-				<div className={styles.description}></div>
+				<div className={styles.description}>
+					{this.props.description1.map((part) => {
+						return <div className={styles.descriptionItem}>{part}</div>;
+					})}
+				</div>
+				<div className={styles.description}>
+					{this.props.description2.map((part) => {
+						return <div className={styles.descriptionItem}>{part}</div>;
+					})}
+				</div>
 			</div>
 		);
 	}
