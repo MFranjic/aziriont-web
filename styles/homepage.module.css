@@ -92,6 +92,7 @@
     min-height: 295px;
 }
 
+/* #region Arrows */
 .spotlightArrow {
     cursor: pointer;
     opacity: 0.5;
@@ -103,6 +104,7 @@
     opacity: 1;
     transform: scale(1.35);
 }
+/* #endregion */
 
 .projectContainer {
     width: 715px;
@@ -114,6 +116,7 @@
     cursor: pointer;
 }
 
+/* #region Bottom */
 .projectContainer .coverBottom {
     position: absolute;
     bottom: 0;
@@ -121,6 +124,11 @@
     height: 70px;
     background-color: rgba(0, 0, 0, 0.6);
     transition: height 0.3s, background-color 0.3s;
+}
+
+.projectContainer:hover .coverBottom {
+    height: 110px;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .projectContainer .projectName {
@@ -135,6 +143,11 @@
     text-align: center;
     line-height: 70px;
     transition: opacity 0.2s, transform 0.3s;
+}
+
+.projectContainer:hover .projectName {
+    transform: translateY(20px);
+    opacity: 0;
 }
 
 .projectContainer .projectDescription {
@@ -152,71 +165,28 @@
     transition: opacity 0.2s, transform 0.3s;
 }
 
-.projectContainer:hover .coverBottom {
-    height: 110px;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.projectContainer:hover .projectName {
-    transform: translateY(20px);
-    opacity: 0;
-}
-
 .projectContainer:hover .projectDescription {
     transform: translateY(20px);
     opacity: 1;
 }
+/* #endregion */
 
-.projectContainer .projectTagMobile {
+/* #region Tags */
+.projectContainer .spotlightTag {
     opacity: 0;
-    width: 86px;
-    height: 35px;
-    background-color: rgb(68, 101, 220);
-    border-radius: 20px;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
-    color: rgb(228, 228, 228);   
-    font-family: 'Maven Pro', Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 400px;
-    text-align: center;
-    line-height: 35px;
     transition: opacity 0.3s;
     transition: transform 0.3s;
     position: absolute;
     bottom: 195px;
-    right: 16px;
 }
 
-.projectContainer:hover .projectTagMobile {
+.projectContainer:hover .spotlightTag {
     opacity: 0.95;
     transform: translateY(70px);
 }
+/* #endregion */
 
-.projectContainer .projectTagTime {
-    opacity: 0;
-    width: 125px;
-    height: 35px;
-    background-color: rgb(62, 62, 62);
-    border-radius: 20px;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
-    color: rgb(228, 228, 228);   
-    font-family: 'Maven Pro', Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 400px;
-    text-align: center;
-    line-height: 35px;
-    transition: opacity 0.3s;
-    transition: transform 0.3s;
-    position: absolute;
-    bottom: 195px;
-    left: 16px;
-}
-
-.projectContainer:hover .projectTagTime {
-    opacity: 0.95;
-    transform: translateY(70px);
-}
-
+/* #region Top (depricated) */
 .projectContainer .coverTop {
     opacity: 0;
     position: absolute;
@@ -236,6 +206,7 @@
 .projectContainer:hover .coverTop {
     opacity: 1;
 }
+/* #endregion */
 /* #endregion */
 
 /* #region Legacy */
