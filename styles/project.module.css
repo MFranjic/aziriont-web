@@ -3,8 +3,155 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 70px;
 }
 
-.gallery {
+/* #region Gallery */
+.galleryContainer {
     margin-top: 95px;
+    width: 1003px;
+    height: 208px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.17);
+    border-radius: 0px 0px 5px 5px;
+    box-shadow:  0 0 2px 1px rgba(0, 0, 0, 0.8);
 }
+
+.galleryImage {
+    width: 230px;
+    height: 178px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+/* #endregion */
+
+/* #region Main info */
+.mainInfoContainer {
+    margin-top: 30px;
+    width: 1005px;
+    height: 285px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Maven Pro', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.mainInfoLeft {
+    width: 700px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainInfoRight {
+    width: 292px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.mainInfoLeft .mainInfoLeftItem {
+    height: 60px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.mainInfoLeftItem .label {
+    height: 30px;
+    width: 101px;
+    padding-left: 20px;
+    text-align: left;
+    color: #a1a1a1;
+    border-right: 1px solid #a1a1a1af;
+    line-height: 30px;
+}
+
+.mainInfoLeftItem .data {
+    padding-left: 20px;
+    text-align: left;
+    color: #000000;
+}
+
+.mainInfoRight .label {
+    height: 60px;
+    width: 247px;
+    text-align: center;
+    color: #a1a1a1;
+    border-bottom: 1px solid #a1a1a1af;
+    line-height: 60px;
+}
+
+.mainInfoRight .data {
+    padding-top: 10px;
+    width: 247px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.mainInfoRight .dataItem {
+    text-align: left;
+    color: #000000;
+    line-height: 35px;
+}
+/* #endregion */
+
+/* #region Video */
+.videoContainer {
+    margin-top: 70px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 6px 50px 5px rgba(0, 0, 0, 0.2);
+}
+/* #endregion */
+
+/* #region Timeline */
+.timelineContainer {
+    margin-top: 50px;
+}
+/* #endregion */
+
+/* #region Details */
+.detailsContainer {
+    margin-top: 50px;
+    width: 1003px;
+    min-width: 700px;
+    height: 592px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: 'Maven Pro', Arial, Helvetica, sans-serif;
+}
+
+.detailsContainer .title {
+    font-size: 35px;
+    font-weight: 500;
+    color: black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.detailsContainer .description {
+    width: 100%;
+    height: 230px;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+/* #endregion */

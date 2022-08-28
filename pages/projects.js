@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import Header from '../components/0_general/Header';
 import Footer from '../components/0_general/Footer';
 import ProjectThumbnail from '../components/projects/ProjectThumbnail';
@@ -24,12 +25,17 @@ export default function Projects() {
 			</main>
 			<div className={styles.main}>
 				<div className={styles.projectsGrid}>
-					<ProjectThumbnail
-						thumbnail="/resources/photos/projects/photo-comba-1.png"
-						title="Comba"
-						time="2021 - 2022"
-						tags={['mobile']}
-					/>
+					<Link href="/projects/comba">
+						<a>
+							<ProjectThumbnail
+								thumbnail="/resources/photos/projects/photo-comba-1.png"
+								title="Comba"
+								time="2021 - 2022"
+								tags={['mobile']}
+							/>
+						</a>
+					</Link>
+
 					<ProjectThumbnail
 						thumbnail="/resources/photos/projects/photo-towerdefense-1.png"
 						title="Tower Defense"
