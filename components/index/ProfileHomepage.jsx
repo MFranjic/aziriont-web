@@ -8,14 +8,21 @@ class ProfileHomePage extends Component {
 		return (
 			<div className={styles.profileContainer}>
 				<div className={styles.profilePhoto}>
-					<Image src="/resources/profile.JPG" alt="Profile Photo" height={210} width={210} layout="fill" objectFit="cover" />
+					<Image
+						src="/resources/profile.JPG"
+						alt="Profile Photo"
+						height={210}
+						width={210}
+						layout="fill"
+						objectFit="cover"
+					/>
 				</div>
 				<div className={styles.profileData}>
 					<div className={styles.profileName}>Marko Franjić</div>
 					<div className={styles.profileProfession}>Software developer</div>
 					<div className={styles.profileSpecialization}>
 						<div className={styles.profileSpecializationItem}>Frontend web</div>
-						<div className={styles.profileSpecializationItem}>Games</div>
+						<div className={styles.profileSpecializationItem}>Unity</div>
 					</div>
 				</div>
 			</div>

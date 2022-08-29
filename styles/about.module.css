@@ -4,3 +4,247 @@
     justify-content: center;
     align-items: center;
 }
+
+/* #region Profile */
+.profileContainer {
+    width: 100%;
+    height: 288px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    box-shadow: 0 0 3px 1px white;
+    background-color: #e7e7e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #region Photo */
+.profileContainer .photo {
+    position: relative;
+    margin-right: 30px;
+    width: 210px;
+    height: 210px;    
+    border-radius: 50%;
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+/* #endregion */
+
+/* #region Info */
+.profileContainer .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Maven Pro', Arial, Helvetica, sans-serif;
+}
+
+/* #region Top info */
+.info .topInfo {
+    height: 117px;
+    width: 512px;
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.topInfo .name {
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.topInfo .birthday {
+    color: #9B9B9B;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+}
+/* #endregion */
+
+/* #region Bottom info */
+.info .bottomInfo {
+    width: 285px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomInfo .profession {
+    height: 60px;
+    line-height: 60px;
+    color: #2F2F2F;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.bottomInfo .specialization {
+    height: 34px;
+    width: 285px;
+    margin-bottom: 23px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.specialization .specializationItem {
+    background-color: rgb(235, 235, 235);
+    border-radius: 3px;
+    width: 127px;
+    height: 32px; 
+    line-height: 32px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    color: rgb(47, 47, 47);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
+}
+/* #endregion */
+/* #endregion */
+
+/* #region Links */
+.profileContainer .links {
+    margin-left: 30px;
+    width: 210px;
+    height: 184px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links .circles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circles .circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0;
+    background-color: white;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+    font-family: 'Maven Pro', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    color: #616161;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.circle:hover {
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+.links .email {
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    background-color: #ebebeb;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    text-align: center;
+    font-family: 'Maven Pro', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #2f2f2f;
+    font-weight: 300;
+}
+/* #endregion */
+/* #endregion */
+
+/* #region Info container */
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Maven Pro', Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+.infoContainer .title {
+    font-size: 35px;
+    font-weight: 300;
+    color: rgba(111, 111, 111, 0.5);
+    text-shadow: 0 0 5px rgba(153, 153, 153, 0.5);
+}
+
+.infoContainer .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.infoContainer .descriptionContainer {
+    width: 1003px;
+    height: 402px;
+    border: 1px solid red;
+    display: flex;
+}
+
+.infoContainer .hideDescription {
+    display: none;
+}
+
+.buttons .buttonContainer {
+    position: relative;
+    height: 60px;
+    width: 60px;
+}
+
+.buttonContainer .button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ececec;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    border: 0;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    top: -4px;
+    bottom: -4px;
+    left: -4px;
+    right: -4px;
+}
+
+.buttonContainer .buttonFocused {
+    position: absolute;
+    top: -7px;
+    bottom: -7px;
+    left: -7px;
+    right: -7px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.7);
+    border-radius: 50px;
+    border: 0;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+/* #endregion */

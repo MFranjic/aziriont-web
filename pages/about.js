@@ -8,7 +8,7 @@ import styles from '../styles/about.module.css';
 
 export default function About() {
 	return (
-		<div>
+		<div className={stylesGeneral.container}>
 			<div className={stylesGeneral.background}>
 				<Image
 					alt="Background"
@@ -25,13 +25,20 @@ export default function About() {
 			</main>
 
 			<div className={styles.main}>
-				<ProfileAbout />
-				<InfoContainer />
-				<InfoContainer />
-				<InfoContainer />
-				<InfoContainer />
+				<ProfileAbout
+					cv=""
+					github="https://github.com/MFranjic"
+					linkedin="https://www.linkedin.com/in/marko-franji%C4%87-031aba77/"
+					facebook="https://www.facebook.com/marko.franjic.7"
+					instagram="https://www.instagram.com/mfranjic95/"
+				/>
+				<InfoContainer title="Career" section="car" items={['0', '1']} />
+				<InfoContainer title="Achievements" section="ach" items={['0', '1', '2']} />
+				<InfoContainer title="Education" section="edu" items={['0', '1', '2']} />
+				<InfoContainer title="ESN" section="esn" items={['0', '1', '2', '3']} />
 			</div>
-			<Footer />
+			<div style={{ marginBottom: 50 }}></div>
+			<Footer position="relative" />
 		</div>
 	);
 }

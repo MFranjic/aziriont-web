@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
+import styles from '../../styles/about.module.css';
 
 class InfoSection extends Component {
 	state = {};
 	render() {
-		return (
-			<div>
-				<p>Info section</p>
-			</div>
-		);
+		return <div className={styles.title}>{this.props.title}</div>;
 	}
 }
 
