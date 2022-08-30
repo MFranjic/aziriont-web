@@ -133,35 +133,35 @@
     line-height: 35px;
 }
 
-.projectTag .tagMobile {
+.projectTag .tagBlue {
     padding: 0px 15px;  
     border-radius: 20px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
     background-color: rgb(68, 101, 220);
 }
 
-.projectTag .tagDesktop {
+.projectTag .tagGreen {
     padding: 0px 15px;  
     border-radius: 20px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
     background-color: rgb(101, 157, 44);
 }
 
-.projectTag .tagVR {
+.projectTag .tagOrange {
     padding: 0px 15px;  
     border-radius: 20px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
     background-color: rgb(211, 135, 19);
 }
 
-.projectTag .tagAI {
+.projectTag .tagRed {
     padding: 0px 15px;  
     border-radius: 20px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
     background-color: rgb(160, 67, 38);
 }
 
-.projectTag .tagTime {
+.projectTag .tagGray {
     padding: 0px 15px;  
     border-radius: 20px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);

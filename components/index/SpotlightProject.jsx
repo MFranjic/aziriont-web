@@ -9,16 +9,23 @@ class SpotlightProject extends Component {
 	render() {
 		return (
 			<div className={styles.projectContainer}>
-				<Image src="/resources/photos/projects/photo-comba-1.png" alt="project-image" layout="fill" objectFit="cover" />
+				<Image
+					src="/resources/photos/projects/photo-comba-1.png"
+					alt="project-image"
+					layout="fill"
+					objectFit="cover"
+				/>
 				<div className={styles.coverBottom}></div>
 				<div className={styles.projectName}>Comba</div>
-				<div className={styles.projectDescription}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+				<div className={styles.projectDescription}>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+				</div>
 				{/* <div className={styles.coverTop}>Comba</div> */}
 				<div className={styles.spotlightTag} style={{ right: 16 }}>
-					<Tag type="mobile" />
+					<Tag color="blue" value="mobile" />
 				</div>
 				<div className={styles.spotlightTag} style={{ left: 16 }}>
-					<Tag type="time" value="2021 - 2022" />
+					<Tag color="gray" value="2021 - 2022" />
 				</div>
 			</div>
 		);

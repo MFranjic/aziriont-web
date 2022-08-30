@@ -24,8 +24,8 @@ class InfoInteraction extends Component {
 							<button className={this.fetchButtonStyle(index)} onClick={() => onSelect(index)}>
 								<Image
 									src={'/resources/icons/icon-about-' + section + '-' + (index + 1) + '.png'}
-									width={37}
-									height={37}
+									width={38}
+									height={38}
 									layout="fixed"
 									objectFit="cover"
 								/>

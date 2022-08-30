@@ -181,6 +181,7 @@
     text-shadow: 0 0 5px rgba(153, 153, 153, 0.5);
 }
 
+/* #region Interaction */
 .infoContainer .buttons {
     display: flex;
     justify-content: space-between;
@@ -189,29 +190,16 @@
     padding-bottom: 25px;
 }
 
-.infoContainer .descriptionContainer {
-    width: 1003px;
-    height: 402px;
-    border: 1px solid red;
-    display: flex;
-}
-
-.infoContainer .hideDescription {
-    display: none;
-}
-
 .buttons .buttonContainer {
+    transform-origin: center;
     position: relative;
     height: 60px;
     width: 60px;
 }
 
 .buttonContainer .button {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    height: 60px;
+    width: 60px;   
     background-color: #ececec;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
@@ -220,23 +208,20 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all 0.1s;
+    transition: all 0.3s;
 }
 
 .button:hover {
     background-color: #ffffff;
-    top: -4px;
-    bottom: -4px;
-    left: -4px;
-    right: -4px;
+    transform: scale(1.25);
 }
 
 .buttonContainer .buttonFocused {
-    position: absolute;
-    top: -7px;
-    bottom: -7px;
-    left: -7px;
-    right: -7px;
+    margin-top: inherit;
+    margin-left: inherit;
+    height: inherit;
+    width: inherit;
+    scale: inherit;
     background-color: #ffffff;
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.7);
     border-radius: 50px;
@@ -244,7 +229,111 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     transition: all 0.3s;
+    cursor: pointer;
 }
+
+.buttonFocused:hover {
+    transform: scale(1.25);
+}
+/* #endregion */
+
+/* #region Description */
+.infoContainer .descriptionContainer {
+    width: 1003px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    font-family: 'Maven Pro', Arial, Helvetica, sans-serif;
+}
+
+.infoContainer .hideDescription {
+    display: none;
+}
+
+.descriptionContainer .itemTitle {
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    text-align: center;
+    background-color: #7E7E7E;
+    border-bottom: 1px solid #828282;
+    border-radius: 3px 3px 0 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #e4e4e4;
+}
+
+.descriptionContainer .itemData {
+    height: 342px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+    .itemData .itemInfo {
+        width: 702px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+    }
+
+        .itemInfo .tagsArea {
+            display: flex;     
+            justify-content: start;
+            margin-bottom: 20px;
+        }
+
+        .itemInfo .textArea {
+            width: 100%;
+            font-size: 16px;
+            font-weight: 300;
+            color: #2F2F2F;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+        }
+
+            .textArea .textItem {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+    .itemData .itemPhotos {
+        height: 301px;
+        display: flex;  
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+        .itemPhotos .itemPhotoContainer {
+            position: relative;
+            width: 230px;
+            height: 144px;
+        }
+
+            .itemPhotoContainer .itemPhoto {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                border-radius: 5px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+                overflow: hidden;
+                cursor: pointer;
+                transition: all 0.3s;
+            }
+
+            .itemPhoto:hover {
+                transform: scale(1.05);
+            }
+/* #endregion */
 /* #endregion */

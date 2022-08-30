@@ -31,7 +31,7 @@ export default function Projects() {
 								thumbnail="/resources/photos/projects/photo-comba-1.png"
 								title="Comba"
 								time="2021 - 2022"
-								tags={['mobile']}
+								tags={[['blue', 'mobile']]}
 							/>
 						</a>
 					</Link>
@@ -40,43 +40,49 @@ export default function Projects() {
 						thumbnail="/resources/photos/projects/photo-towerdefense-1.png"
 						title="Tower Defense"
 						time="2022"
-						tags={['VR']}
+						tags={[['orange', 'VR']]}
 					/>
 					<ProjectThumbnail
 						thumbnail="/resources/photos/projects/photo-gamejams-1.png"
 						title="Game jams"
 						time="2020 - 2022"
-						tags={['desktop', 'VR']}
+						tags={[
+							['green', 'desktop'],
+							['orange', 'VR'],
+						]}
 					/>
 					<ProjectThumbnail
 						thumbnail="/resources/photos/projects/photo-snakesladders-1.png"
 						title="Snakes & Ladders"
 						time="2021"
-						tags={['desktop']}
+						tags={[['green', 'desktop']]}
 					/>
 					<ProjectThumbnail
 						thumbnail="/resources/photos/projects/photo-slonko-1.png"
 						title="Slonko - coloring"
 						time="2020"
-						tags={['mobile']}
+						tags={[['blue', 'mobile']]}
 					/>
 					<ProjectThumbnail
 						thumbnail="/resources/photos/projects/photo-unityprojects-1.png"
 						title="Unity education projects"
 						time="2019 - 2020"
-						tags={['desktop']}
+						tags={[['green', 'desktop']]}
 					/>
 					<ProjectThumbnail
 						thumbnail="/resources/photos/projects/photo-masterthesis-1.png"
 						title="Master thesis - object recognition"
 						time="2019"
-						tags={['mobile', 'AI']}
+						tags={[
+							['blue', 'mobile'],
+							['red', 'AI'],
+						]}
 					/>
 					<ProjectThumbnail
 						thumbnail="/resources/photos/projects/photo-morris-1.png"
 						title="Nine men's morris"
 						time="2018"
-						tags={['desktop']}
+						tags={[['green', 'desktop']]}
 					/>
 				</div>
 			</div>
