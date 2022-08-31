@@ -25,17 +25,11 @@ export default function About() {
 			</main>
 
 			<div className={styles.main}>
-				<ProfileAbout
-					cv=""
-					github="https://github.com/MFranjic"
-					linkedin="https://www.linkedin.com/in/marko-franji%C4%87-031aba77/"
-					facebook="https://www.facebook.com/marko.franjic.7"
-					instagram="https://www.instagram.com/mfranjic95/"
-				/>
-				<InfoContainer title="Career" section="car" items={['0', '1']} />
-				<InfoContainer title="Achievements" section="ach" items={['0', '1', '2']} />
-				<InfoContainer title="Education" section="edu" items={['0', '1', '2']} />
-				<InfoContainer title="ESN" section="esn" items={['0', '1', '2', '3']} />
+				<ProfileAbout />
+				<InfoContainer index="0" />
+				<InfoContainer index="1" />
+				<InfoContainer index="2" />
+				<InfoContainer index="3" />
 			</div>
 			<div style={{ marginBottom: 50 }}></div>
 			<Footer position="relative" />

@@ -5,6 +5,7 @@ import Footer from '../components/0_general/Footer';
 import ProjectThumbnail from '../components/projects/ProjectThumbnail';
 import stylesGeneral from '../styles/general.module.css';
 import styles from '../styles/projects.module.css';
+import projects from '../data/projectsData.js';
 
 export default function Projects() {
 	return (
@@ -25,65 +26,20 @@ export default function Projects() {
 			</main>
 			<div className={styles.main}>
 				<div className={styles.projectsGrid}>
-					<Link href="/projects/comba">
-						<a>
-							<ProjectThumbnail
-								thumbnail="/resources/photos/projects/photo-comba-1.png"
-								title="Comba"
-								time="2021 - 2022"
-								tags={[['blue', 'mobile']]}
-							/>
-						</a>
-					</Link>
-
-					<ProjectThumbnail
-						thumbnail="/resources/photos/projects/photo-towerdefense-1.png"
-						title="Tower Defense"
-						time="2022"
-						tags={[['orange', 'VR']]}
-					/>
-					<ProjectThumbnail
-						thumbnail="/resources/photos/projects/photo-gamejams-1.png"
-						title="Game jams"
-						time="2020 - 2022"
-						tags={[
-							['green', 'desktop'],
-							['orange', 'VR'],
-						]}
-					/>
-					<ProjectThumbnail
-						thumbnail="/resources/photos/projects/photo-snakesladders-1.png"
-						title="Snakes & Ladders"
-						time="2021"
-						tags={[['green', 'desktop']]}
-					/>
-					<ProjectThumbnail
-						thumbnail="/resources/photos/projects/photo-slonko-1.png"
-						title="Slonko - coloring"
-						time="2020"
-						tags={[['blue', 'mobile']]}
-					/>
-					<ProjectThumbnail
-						thumbnail="/resources/photos/projects/photo-unityprojects-1.png"
-						title="Unity education projects"
-						time="2019 - 2020"
-						tags={[['green', 'desktop']]}
-					/>
-					<ProjectThumbnail
-						thumbnail="/resources/photos/projects/photo-masterthesis-1.png"
-						title="Master thesis - object recognition"
-						time="2019"
-						tags={[
-							['blue', 'mobile'],
-							['red', 'AI'],
-						]}
-					/>
-					<ProjectThumbnail
-						thumbnail="/resources/photos/projects/photo-morris-1.png"
-						title="Nine men's morris"
-						time="2018"
-						tags={[['green', 'desktop']]}
-					/>
+					{projects.map((project, index) => {
+						return (
+							<Link href={'/project?id=' + index}>
+								<a>
+									<ProjectThumbnail
+										thumbnail={projects[index].photoPath + '1.png'}
+										title={projects[index].title}
+										time={projects[index].time}
+										tags={projects[index].tags}
+									/>
+								</a>
+							</Link>
+						);
+					})}
 				</div>
 			</div>
 			<Footer position="relative" />

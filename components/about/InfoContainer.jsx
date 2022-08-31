@@ -3,6 +3,7 @@ import styles from '../../styles/about.module.css';
 import InfoSection from './InfoSection';
 import InfoInteraction from './InfoInteraction';
 import InfoDetails from './InfoDetails';
+import profile from '../../data/profileData.js';
 
 class InfoContainer extends Component {
 	state = {
@@ -25,16 +26,21 @@ class InfoContainer extends Component {
 	};
 
 	render() {
+		const { index } = this.props;
+
 		return (
 			<div className={styles.infoContainer}>
-				<InfoSection title={this.props.title} />
+				<InfoSection title={profile.sections[index].title} />
 				<InfoInteraction
-					section={this.props.section}
-					items={this.props.items}
+					id={profile.sections[index].id}
+					items={profile.sections[index].items}
 					onSelect={this.handleButtonClick}
 					active={this.state.active}
 				/>
-				<InfoDetails display={this.state.descriptionStyle} active={this.state.active} />
+				<InfoDetails
+					display={this.state.descriptionStyle}
+					section={profile.sections[index].items[this.state.active]}
+				/>
 			</div>
 		);
 	}

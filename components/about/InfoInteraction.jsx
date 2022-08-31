@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Image from 'next/image';
 import styles from '../../styles/about.module.css';
+import profile from '../../data/profileData.js';
 
 class InfoInteraction extends Component {
 	state = {};
@@ -14,7 +15,7 @@ class InfoInteraction extends Component {
 	};
 
 	render() {
-		const { onSelect, section } = this.props;
+		const { onSelect, id } = this.props;
 
 		return (
 			<div className={styles.buttons} style={{ width: this.getContainerWidth() }}>
@@ -23,7 +24,7 @@ class InfoInteraction extends Component {
 						<div className={styles.buttonContainer}>
 							<button className={this.fetchButtonStyle(index)} onClick={() => onSelect(index)}>
 								<Image
-									src={'/resources/icons/icon-about-' + section + '-' + (index + 1) + '.png'}
+									src={'/resources/icons/icon-about-' + id + '-' + (index + 1) + '.png'}
 									width={38}
 									height={38}
 									layout="fixed"

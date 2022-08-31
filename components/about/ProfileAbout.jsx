@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Image from 'next/image';
 import styles from '../../styles/about.module.css';
+import profile from '../../data/profileData.js';
 
 class ProfileAbout extends Component {
 	state = {};
@@ -12,24 +13,24 @@ class ProfileAbout extends Component {
 				</div>
 				<div className={styles.info}>
 					<div className={styles.topInfo}>
-						<div className={styles.name}>Marko Franjić</div>
+						<div className={styles.name}>{profile.name}</div>
 						<div className={styles.birthday}>
 							23<sup>rd</sup> Jan 1995
 						</div>
-						<div className={styles.birthday}>Zagreb, Croatia</div>
+						<div className={styles.birthday}>{profile.location}</div>
 					</div>
 					<div className={styles.bottomInfo}>
-						<div className={styles.profession}>Software developer</div>
+						<div className={styles.profession}>{profile.profession}</div>
 						<div className={styles.specialization}>
-							<div className={styles.specializationItem}>Frontend web</div>
-							<div className={styles.specializationItem}>Unity</div>
+							<div className={styles.specializationItem}>{profile.specialization[0]}</div>
+							<div className={styles.specializationItem}>{profile.specialization[1]}</div>
 						</div>
 					</div>
 				</div>
 				<div className={styles.links}>
 					<div className={styles.circles} style={{ width: 135 }}>
 						<button className={styles.circle}>CV</button>
-						<a href={this.props.github} target="_blank" className={styles.circle}>
+						<a href={profile.github} target="_blank" className={styles.circle}>
 							<Image
 								src="/resources/icons/icon-general-github.png"
 								alt="profile-photo"
@@ -40,9 +41,9 @@ class ProfileAbout extends Component {
 							/>
 						</a>
 					</div>
-					<div className={styles.email}>mfranjic995@gmail.com</div>
+					<div className={styles.email}>{profile.email}</div>
 					<div className={styles.circles} style={{ width: 210 }}>
-						<a href={this.props.linkedin} target="_blank" className={styles.circle}>
+						<a href={profile.linkedin} target="_blank" className={styles.circle}>
 							<Image
 								src="/resources/icons/icon-general-linkedin.png"
 								alt="profile-photo"
@@ -52,7 +53,7 @@ class ProfileAbout extends Component {
 								objectFit="cover"
 							/>
 						</a>
-						<a href={this.props.facebook} target="_blank" className={styles.circle}>
+						<a href={profile.facebook} target="_blank" className={styles.circle}>
 							<Image
 								src="/resources/icons/icon-general-facebook.png"
 								alt="profile-photo"
@@ -62,7 +63,7 @@ class ProfileAbout extends Component {
 								objectFit="cover"
 							/>
 						</a>
-						<a href={this.props.instagram} target="_blank" className={styles.circle}>
+						<a href={profile.instagram} target="_blank" className={styles.circle}>
 							<Image
 								src="/resources/icons/icon-general-instagram.png"
 								alt="profile-photo"

@@ -9,25 +9,25 @@ class ProjectMainInfo extends Component {
 				<div className={styles.mainInfoLeft}>
 					<div className={styles.mainInfoLeftItem}>
 						<div className={styles.label}>About</div>
-						<div className={styles.data}>{this.props.about}</div>
+						<div className={styles.data}>{this.props.project.about}</div>
 					</div>
 					<div className={styles.mainInfoLeftItem}>
 						<div className={styles.label}>Idea</div>
-						<div className={styles.data}>{this.props.idea}</div>
+						<div className={styles.data}>{this.props.project.idea}</div>
 					</div>
 					<div className={styles.mainInfoLeftItem}>
 						<div className={styles.label}>Result</div>
-						<div className={styles.data}>{this.props.result}</div>
+						<div className={styles.data}>{this.props.project.result}</div>
 					</div>
 					<div className={styles.mainInfoLeftItem}>
 						<div className={styles.label}>Team</div>
-						<div className={styles.data}>{this.props.team}</div>
+						<div className={styles.data}>{this.props.project.team}</div>
 					</div>
 				</div>
 				<div className={styles.mainInfoRight}>
 					<div className={styles.label}>Tools</div>
 					<div className={styles.data}>
-						{this.props.tools.map((tool) => {
+						{this.props.project.tools.map((tool) => {
 							return <div className={styles.dataItem}>&bull; {tool}</div>;
 						})}
 					</div>

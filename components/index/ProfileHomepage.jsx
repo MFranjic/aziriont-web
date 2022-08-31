@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from '../../styles/homepage.module.css';
 import Image from 'next/image';
+import profile from '../../data/profileData.js';
 
 class ProfileHomePage extends Component {
 	state = {};
@@ -9,7 +10,7 @@ class ProfileHomePage extends Component {
 			<div className={styles.profileContainer}>
 				<div className={styles.profilePhoto}>
 					<Image
-						src="/resources/profile.JPG"
+						src={profile.profilePhoto}
 						alt="Profile Photo"
 						height={210}
 						width={210}
@@ -18,11 +19,11 @@ class ProfileHomePage extends Component {
 					/>
 				</div>
 				<div className={styles.profileData}>
-					<div className={styles.profileName}>Marko Franjić</div>
-					<div className={styles.profileProfession}>Software developer</div>
+					<div className={styles.profileName}>{profile.name}</div>
+					<div className={styles.profileProfession}>{profile.profession}</div>
 					<div className={styles.profileSpecialization}>
-						<div className={styles.profileSpecializationItem}>Frontend web</div>
-						<div className={styles.profileSpecializationItem}>Unity</div>
+						<div className={styles.profileSpecializationItem}>{profile.specialization[0]}</div>
+						<div className={styles.profileSpecializationItem}>{profile.specialization[1]}</div>
 					</div>
 				</div>
 			</div>

@@ -19,12 +19,27 @@
     box-shadow:  0 0 2px 1px rgba(0, 0, 0, 0.8);
 }
 
-.galleryImage {
+.galleryImageContainer {
     width: 230px;
     height: 178px;
+    position: relative;
+}
+
+.galleryImage {
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
     overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.galleryImage:hover {
+    transform: scale(1.03);
 }
 /* #endregion */
 

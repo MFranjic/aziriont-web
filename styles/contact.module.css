@@ -54,7 +54,7 @@
     border-radius: 10px;
     width: 313px;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .data::placeholder {
@@ -64,7 +64,7 @@
 }
 
 .inputContanier:focus-within {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .data:focus {
