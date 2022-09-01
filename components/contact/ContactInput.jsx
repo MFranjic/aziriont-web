@@ -6,14 +6,16 @@ class ContactInput extends Component {
 	render() {
 		return (
 			<div className={styles.inputContanier}>
-				<label for={this.props.label} className={styles.label}>
+				<label for={this.props.id} className={styles.label}>
 					{this.props.label}
 				</label>
 				<input
 					type="text"
-					id={this.props.label}
+					required={this.props.required}
+					name={this.props.id}
+					id={this.props.id}
 					className={styles.data}
-					style={{ height: this.props.height }}
+					style={{ height: 36 }}
 					placeholder={this.props.placeholder}></input>
 			</div>
 		);

@@ -246,10 +246,16 @@
     justify-content: center;
     align-items: stretch;
     font-family: 'Maven Pro', Arial, Helvetica, sans-serif;
+    transform: scale(1);
+    opacity: 1;
+    transition: transform 0.4s ease;
 }
 
 .infoContainer .hideDescription {
-    display: none;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    transform: scale(0);
 }
 
 .descriptionContainer .itemTitle {
