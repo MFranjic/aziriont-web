@@ -12,16 +12,23 @@ class InfoContainer extends Component {
 	};
 
 	handleButtonClick = (order) => {
-		if (order !== this.state.active) {
+		if (this.state.active === null) {
 			this.setState({
 				descriptionStyle: styles.descriptionContainer,
 				active: order,
 			});
 		} else {
-			this.setState({
-				descriptionStyle: styles.hideDescription,
-				active: null,
-			});
+			if (order !== this.state.active) {
+				this.setState({
+					descriptionStyle: styles.descriptionTransitionContainer,
+					active: order,
+				});
+			} else {
+				this.setState({
+					descriptionStyle: styles.hideDescription,
+					active: null,
+				});
+			}
 		}
 	};
 

@@ -12,7 +12,7 @@ const Header = () => {
 						<Image src="/resources/logo.png" alt="Logo" height={57} width={61} />
 					</Link>
 				</div>
-				<div className={styles.buttonsContainer}>
+				<div>
 					<Link href="/projects">
 						<a className={styles.button + ' ' + styles.buttonBorder}>PROJECTS</a>
 					</Link>

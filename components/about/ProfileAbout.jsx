@@ -29,7 +29,9 @@ class ProfileAbout extends Component {
 				</div>
 				<div className={styles.links}>
 					<div className={styles.circles} style={{ width: 135 }}>
-						<button className={styles.circle}>CV</button>
+						<a href={profile.cvPath} download={profile.cvFile} className={styles.circle}>
+							CV
+						</a>
 						<a href={profile.github} target="_blank" className={styles.circle}>
 							<Image
 								src="/resources/icons/icon-general-github.png"

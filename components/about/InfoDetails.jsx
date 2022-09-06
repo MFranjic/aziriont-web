@@ -7,7 +7,7 @@ class InfoDetails extends Component {
 	state = {};
 	render() {
 		return (
-			<div className={this.props.display}>
+			<div className={this.props.display} key={this.props.section?.description}>
 				<div className={styles.itemTitle}>{this.props.section?.title}</div>
 				<div className={styles.itemData}>
 					<div className={styles.itemInfo}>
@@ -31,9 +31,9 @@ class InfoDetails extends Component {
 							<div className={styles.itemPhoto}>
 								<Image
 									src="/resources/photos/projects/photo-comba-1.png"
-									width={230}
-									height={144}
-									layout="fixed"
+									width={2300}
+									height={1600}
+									layout="intrinsic"
 									objectFit="cover"
 								/>
 							</div>
@@ -42,9 +42,9 @@ class InfoDetails extends Component {
 							<div className={styles.itemPhoto}>
 								<Image
 									src="/resources/photos/projects/photo-gamejams-1.png"
-									width={230}
-									height={144}
-									layout="fixed"
+									width={2300}
+									height={1600}
+									layout="intrinsic"
 									objectFit="cover"
 								/>
 							</div>

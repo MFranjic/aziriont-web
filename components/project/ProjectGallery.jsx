@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Image from 'next/image';
 import styles from '../../styles/project.module.css';
+import { ImageViewer } from 'react-image-viewer-dv';
 
 class ProjectGallery extends Component {
 	state = {};
@@ -10,9 +11,18 @@ class ProjectGallery extends Component {
 				{this.props.images.map((imagePath) => {
 					return (
 						<div className={styles.galleryImageContainer}>
-							<div className={styles.galleryImage}>
-								<Image src={imagePath} alt="project-image" width={230} height={178} objectFit="cover" />
-							</div>
+							<ImageViewer>
+								<div className={styles.galleryImage}>
+									<Image
+										src={imagePath}
+										alt="project-image"
+										width={2300}
+										height={1780}
+										layout="intrinsic"
+										objectFit="cover"
+									/>
+								</div>
+							</ImageViewer>
 						</div>
 					);
 				})}

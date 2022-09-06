@@ -248,17 +248,51 @@
     font-family: 'Maven Pro', Arial, Helvetica, sans-serif;
     transform: scale(1);
     opacity: 1;
-    transition: transform 0.4s ease;
+    transform-origin: top;
+    animation: appear 0.4s linear; 
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    50% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.infoContainer .descriptionTransitionContainer {
+    width: 1003px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    font-family: 'Maven Pro', Arial, Helvetica, sans-serif;
+    animation: fadein 0.5s linear;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .infoContainer .hideDescription {
     height: 0;
-    width: 0;
     opacity: 0;
-    transform: scale(0);
+    transform: scaleY(0);
 }
 
-.descriptionContainer .itemTitle {
+.itemTitle {
     height: 60px;
     width: 100%;
     line-height: 60px;
@@ -271,7 +305,7 @@
     color: #e4e4e4;
 }
 
-.descriptionContainer .itemData {
+.itemData {
     height: 342px;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.3);
@@ -334,12 +368,12 @@
                 border-radius: 5px;
                 box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
                 overflow: hidden;
-                cursor: pointer;
+                /* cursor: pointer; */
                 transition: all 0.3s;
             }
-
+/* 
             .itemPhoto:hover {
                 transform: scale(1.05);
-            }
+            } */
 /* #endregion */
 /* #endregion */

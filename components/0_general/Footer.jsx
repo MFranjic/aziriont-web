@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from '../../styles/general.module.css';
 import Image from 'next/image';
-import Link from 'next/link';
+import profile from '../../data/profileData.js';
 
 class Footer extends Component {
 	state = {};
@@ -18,7 +18,49 @@ class Footer extends Component {
 						<Image src="/resources/logo.png" alt="Logo" height={57} width={61} />
 					</div>
 				</div>
-				<div className={styles.buttonsContainer}></div>
+				<div className={styles.buttonsContainer}>
+					<a href={profile.linkedin} target="_blank" className={styles.circle}>
+						<Image
+							src="/resources/icons/icon-general-linkedin.png"
+							alt="profile-photo"
+							height={22}
+							width={22}
+							layout="fixed"
+							objectFit="cover"
+						/>
+					</a>
+					<a href={profile.github} target="_blank" className={styles.circle}>
+						<Image
+							src="/resources/icons/icon-general-github.png"
+							alt="profile-photo"
+							height={30}
+							width={30}
+							layout="fixed"
+							objectFit="cover"
+						/>
+					</a>
+					<a href={profile.facebook} target="_blank" className={styles.circle}>
+						<Image
+							src="/resources/icons/icon-general-facebook.png"
+							alt="profile-photo"
+							height={22}
+							width={22}
+							layout="fixed"
+							objectFit="cover"
+						/>
+					</a>
+					<a href={profile.instagram} target="_blank" className={styles.circle}>
+						<Image
+							src="/resources/icons/icon-general-instagram.png"
+							alt="profile-photo"
+							height={22}
+							width={22}
+							layout="fixed"
+							objectFit="cover"
+						/>
+					</a>
+				</div>
+				<div className={styles.emailContainer}>{profile.email}</div>
 			</footer>
 		);
 	}
