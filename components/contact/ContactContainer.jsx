@@ -6,7 +6,7 @@ class ContactContainer extends Component {
 	state = {};
 	render() {
 		return (
-			<form action="/api/form" method="post">
+			<form action="/api/form" id="userMessage" name="userMessage" method="post">
 				<div className={styles.contactContainer}>
 					<div className={styles.infoContainer}>
 						<ContactInput
@@ -28,8 +28,9 @@ class ContactContainer extends Component {
 								Message
 							</label>
 							<textarea
-								name="Message"
+								name="message"
 								id="message"
+								form="userMessage"
 								type="text"
 								required={true}
 								className={styles.data}

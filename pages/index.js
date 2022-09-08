@@ -8,10 +8,7 @@ import styles from '../styles/homepage.module.css';
 
 export default function Home() {
 	return (
-		<div>
-			<div className={stylesGeneral.background}>
-				<Image alt="Background" src="/resources/background-1.png" layout="fill" objectFit="cover" quality={100} />
-			</div>
+		<div className={stylesGeneral.background}>
 			<Header />
 			<div className={styles.main}>
 				<ProfileHomepage />

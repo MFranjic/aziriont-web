@@ -1,14 +1,35 @@
-.container {
+.background2 {
     position: relative;
+    background-image: url(../public/resources/background-2.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 100%;
 }
 
-.background {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    z-index: -1;
+.background { 
+    background-image: url(../public/resources/background-1.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+.background3 { 
+    background-image: url(../public/resources/background-1.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
 }
 
 .title {
@@ -81,7 +102,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
@@ -158,6 +179,76 @@
     color: #d2d2d2;
     font-size: 16px;
     font-weight: 300;
+}
+
+@media (max-width: 1100px) {
+    .footer {
+        justify-content: space-evenly;
+    }
+
+    .buttonsContainer {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .companyInfo {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1101px) {
+    .footer {
+        justify-content: center;
+    }
+
+    .buttonsContainer {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .companyInfo {
+        font-size: 14px;
+    }
+}
+
+@media (max-height: 600px) {
+    .background {
+        height: 100%;
+    }
+
+    .background .footer {
+        position: relative;
+    }
+}
+
+@media (min-height: 601px) {
+    .background {
+        height: 100vh;
+    }
+
+    .background .footer {
+        position: absolute;
+    }
+}
+
+@media (max-height: 900px) {
+    .background3 {
+        height: 100%;
+    }
+
+    .background3 .footer {
+        position: relative;
+    }
+}
+
+@media (min-height: 901px) {
+    .background3 {
+        height: 100vh;
+    }
+
+    .background3 .footer {
+        position: absolute;
+    }
 }
 
 /* #endregion */

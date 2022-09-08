@@ -86,10 +86,29 @@
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    top: 315px;
+    top: 319px;
     bottom: 90px;
     width: 835px;
-    min-height: 295px;
+
+}
+
+@media (max-height: 600px) {
+    .spotlightContainer {
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 215px;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+@media (min-height: 601px) {
+    .spotlightContainer {
+        position: absolute;
+        top: 319px;
+        bottom: 90px;
+    }
 }
 
 /* #region Arrows */

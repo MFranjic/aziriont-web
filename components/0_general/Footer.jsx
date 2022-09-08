@@ -7,7 +7,7 @@ class Footer extends Component {
 	state = {};
 	render() {
 		return (
-			<footer className={styles.footer} style={{ position: this.props.position }}>
+			<footer className={styles.footer} /*style={{ position: this.props.position }}*/>
 				<div className={styles.companyContainer}>
 					<div className={styles.companyAddress}>
 						<p className={styles.companyInfo}>Aziriont.j.d.o.o.</p>

@@ -8,22 +8,11 @@ import styles from '../styles/about.module.css';
 
 export default function About() {
 	return (
-		<div className={stylesGeneral.container}>
-			<div className={stylesGeneral.background}>
-				<Image
-					alt="Background"
-					src="/resources/background-2.png"
-					layout="fill"
-					objectFit="cover"
-					objectPosition="top"
-					quality={100}
-				/>
-			</div>
+		<div className={stylesGeneral.background2}>
 			<Header />
 			<main>
 				<h1 className={stylesGeneral.title}>About me</h1>
 			</main>
-
 			<div className={styles.main}>
 				<ProfileAbout />
 				<InfoContainer index="0" />
@@ -31,7 +20,6 @@ export default function About() {
 				<InfoContainer index="2" />
 				<InfoContainer index="3" />
 			</div>
-			<div style={{ marginBottom: 50 }}></div>
 			<Footer position="relative" />
 		</div>
 	);

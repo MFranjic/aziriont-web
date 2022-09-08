@@ -7,16 +7,7 @@ import styles from '../styles/contact.module.css';
 
 export default function Contact() {
 	return (
-		<div>
-			<div className={stylesGeneral.background}>
-				<Image
-					alt="Background"
-					src="/resources/background-1.png"
-					layout="fill"
-					objectFit="cover"
-					quality={100}
-				/>
-			</div>
+		<div className={stylesGeneral.background3}>
 			<Header />
 			<main>
 				<h1 className={stylesGeneral.title}>Contact me</h1>

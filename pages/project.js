@@ -16,17 +16,7 @@ export default function Project() {
 	var id = router.query['id'];
 
 	return (
-		<div className={stylesGeneral.container}>
-			<div className={stylesGeneral.background}>
-				<Image
-					alt="Background"
-					src="/resources/background-2.png"
-					layout="fill"
-					objectFit="cover"
-					objectPosition="top"
-					quality={100}
-				/>
-			</div>
+		<div className={stylesGeneral.background2}>
 			<Header />
 			<div className={styles.main}>
 				<ProjectGallery

@@ -9,17 +9,7 @@ import projects from '../data/projectsData.js';
 
 export default function Projects() {
 	return (
-		<div className={stylesGeneral.container}>
-			<div className={stylesGeneral.background}>
-				<Image
-					alt="Background"
-					src="/resources/background-2.png"
-					layout="fill"
-					objectFit="cover"
-					objectPosition="top"
-					quality={100}
-				/>
-			</div>
+		<div className={stylesGeneral.background2}>
 			<Header />
 			<main>
 				<h1 className={stylesGeneral.title}>Projects</h1>

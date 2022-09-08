@@ -4,19 +4,21 @@ import styles from '../../styles/contact.module.css';
 class ContactInput extends Component {
 	state = {};
 	render() {
+		const { id, label, required, placeholder } = this.props;
+
 		return (
 			<div className={styles.inputContanier}>
-				<label for={this.props.id} className={styles.label}>
-					{this.props.label}
+				<label for={id} className={styles.label}>
+					{label}
 				</label>
 				<input
 					type="text"
-					required={this.props.required}
-					name={this.props.id}
-					id={this.props.id}
+					required={required}
+					name={id}
+					id={id}
 					className={styles.data}
 					style={{ height: 36 }}
-					placeholder={this.props.placeholder}></input>
+					placeholder={placeholder}></input>
 			</div>
 		);
 	}

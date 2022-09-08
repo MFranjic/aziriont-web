@@ -15,5 +15,5 @@ export default function handler(req, res) {
 
 	// Found the name.
 	// Sends a HTTP success code
-	res.status(200).json({ data: `${body.firstName} ${body.firstName}` });
+	res.status(200).json({ data: `${body.firstName} ${body.secondName} ${body.title} ${body.email} ${body.message}` });
 }
