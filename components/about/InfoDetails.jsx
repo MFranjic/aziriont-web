@@ -30,7 +30,7 @@ class InfoDetails extends Component {
 						<div className={styles.itemPhotoContainer}>
 							<div className={styles.itemPhoto}>
 								<Image
-									src="/resources/photos/projects/photo-comba-1.png"
+									src={this.props.section?.photoTop}
 									width={2300}
 									height={1600}
 									layout="intrinsic"
@@ -41,7 +41,7 @@ class InfoDetails extends Component {
 						<div className={styles.itemPhotoContainer}>
 							<div className={styles.itemPhoto}>
 								<Image
-									src="/resources/photos/projects/photo-gamejams-1.png"
+									src={this.props.section?.photoBottom}
 									width={2300}
 									height={1600}
 									layout="intrinsic"
