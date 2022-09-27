@@ -215,7 +215,7 @@
 
 .button:hover {
     background-color: #ffffff;
-    transform: scale(1.25);
+    transform: scale(1.06);
 }
 
 .buttonContainer .buttonFocused {
@@ -236,7 +236,7 @@
 }
 
 .buttonFocused:hover {
-    transform: scale(1.25);
+    transform: scale(1.06);
 }
 /* #endregion */
 
