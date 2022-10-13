@@ -33,7 +33,7 @@ export default function Project() {
 					</h1>
 				</main>
 				<ProjectMainInfo project={projects[id]} />
-				<ProjectVideo youtube={projects[id].youtube} />
+				{/* <ProjectVideo youtube={projects[id].youtube} /> */}
 				<ProjectTimeline timeline={projects[id].timeline} />
 				<ProjectDetails description1={projects[id].description1} description2={projects[id].description2} />
 			</div>

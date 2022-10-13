@@ -70,7 +70,11 @@ const profile = {
 			id: 'ach',
 			items: [
 				{
-					title: 'Global Game Jam 2022, 1st place',
+					title: (
+						<span>
+							Global Game Jam 2022, 1<sup>st</sup> place
+						</span>
+					),
 					tags: [
 						['gray', 'Jan 2022'],
 						['orange', 'Novska'],
@@ -84,7 +88,11 @@ const profile = {
 					photoBottom: '/resources/photos/about/photo-about-ach-1a.jpg',
 				},
 				{
-					title: 'Virtual Skills hackathon, 2nd place',
+					title: (
+						<span>
+							Virtual Skills hackathon, 2<sup>nd</sup> place
+						</span>
+					),
 					tags: [
 						['gray', 'Jun 2021'],
 						['orange', 'Novska'],
@@ -98,7 +106,11 @@ const profile = {
 					photoBottom: '/resources/photos/about/photo-about-ach-2b.jpg',
 				},
 				{
-					title: 'Global Game Jam 2020, 2nd place',
+					title: (
+						<span>
+							Global Game Jam 2020, 2<sup>nd</sup> place
+						</span>
+					),
 					tags: [
 						['gray', 'Jan 2020'],
 						['orange', 'Novska'],
@@ -126,7 +138,11 @@ const profile = {
 						['gray', 'Apr - Oct 2019'],
 						['orange', 'Novska'],
 					],
-					description: ["I'm Marko", "I'm Marko", "I'm Marko"],
+					description: [
+						"At start of my last university year I've enrolled a course of basics of game development. Through that I also go involved into a project with other students, and that gave us an opportunity to present our game on both of the biggest game dev conferences in Croatia that year. At the second one we got introduced to PISMO incubator and learned about their 6-months education - and decided there and then to pursue that after coming back.",
+						'Main goal of the education was to give us an overview of ALL the areas of Unity development, some more in depth, others just to get us more interested so that we can keep researching by ourselves. Moveover, it provided me with valuable hands-on project experience and possiblity to network with like-minded people.',
+						'This education has shaped my career so far, and is by far the best opportunity for anyone interested in being a game developer in Croatia.',
+					],
 					photoTop: '/resources/photos/about/photo-about-edu-1a.jpg',
 					photoBottom: '/resources/photos/about/photo-about-edu-1b.jpg',
 				},
@@ -136,19 +152,27 @@ const profile = {
 						['gray', 'Sep 2013 - Jul 2019'],
 						['blue', 'Zagreb'],
 					],
-					description: ["I'm Marko", "I'm Marko", "I'm Marko"],
+					description: [
+						"I've completed master's degree in software engineering on University of Zagreb. The faculty I was a student of provided me with basically everything I was interested in after high school education, since it never crossed my mind to pursue any other career paths.",
+						'Some of the courses I would say had the most influence and made me more curious about my profession were "Algorithms and Data Structures", "Object Oriented Programming", "Programming Language Translation", "Artificial Inteligence", "Introduction to Virtual Environments", "Business Intelligence", and "Project Management".',
+						"For bachelor's thesis I've created a genome sequence analyser, but concluded afterwards that the area of bioinformatics is not really something for me. In my master's thesis focus was on application of convolutional neural networks in recognizing objects in digital games.",
+					],
 					photoTop: '/resources/photos/about/photo-about-edu-2a.jpg',
 					photoBottom: '/resources/photos/about/photo-about-edu-2b.png',
 				},
 				{
 					title: 'Erasmus+ exchange, Luleå University of Technology',
 					tags: [
-						['gray', 'Aug - Dec 2016'],
-						['green', 'Luleå'],
+						['gray', 'Aug 2016 - Jan 2017'],
+						['green', 'Luleå, Sweden'],
 					],
-					description: ["I'm Marko", "I'm Marko", "I'm Marko"],
-					photoTop: '/resources/photos/about/photo-about-edu-3a.png',
-					photoBottom: '/resources/photos/about/photo-about-edu-3b.png',
+					description: [
+						"On my third year of University I've decided to apply for Erasmus mobility. The idea to study abroad for a semestar always seemed great, and when I finally started researching possiblities it didn't take long to find my perfect destination.",
+						"It was arguably the most important experience that defined me as a person going forward in life. I've chosen the far north of Europe because I wanted to be inspired, and to get something completely different out of everyday life. The climate, people & mentality, country, culture, uni courses, free time activities, food - all of it was way different than back home in Croatia!",
+						'As for the formal education aspect, the biggest difference was that we basically had a group project on every course (for "Pervasive Computing" we created a VR app for DJing). Moreover, as part of an exam for "Software Engineering" course I had 1 week to refactor a 500-lines of Monopoly game code in Java while following learnt principles.',
+					],
+					photoTop: '/resources/photos/about/photo-about-edu-3a.jpg',
+					photoBottom: '/resources/photos/about/photo-about-edu-3b.jpg',
 				},
 			],
 		},
@@ -165,9 +189,13 @@ const profile = {
 						['gray', 'Sep 2018 - Jun 2022'],
 						['red', 'Europe'],
 					],
-					description: ["I'm Marko", "I'm Marko", "I'm Marko"],
-					photoTop: '/resources/photos/about/photo-about-esn-1a.png',
-					photoBottom: '/resources/photos/about/photo-about-esn-1b.png',
+					description: [
+						"My Erasmus semester abroad made me want to stay somehow connected to the idea of mobility even after coming back. Luckily, there is a local section of ESN in Zagreb, so I've decided to join with the idea of meeting and helping international students arriving to my city.",
+						'ESN is the biggest international volonteering student organisation in Europe, having over 15,000 active members, whos mission is enrichment of society through international students. At the end, I ended up staying in the organization for the next 4 years - gathering and absorbing all the knowledge and experience I could.',
+						"To me ESN was (and still is) more than just a student organisation, it was a home where I've always felt accepted and at peace, surrounded with hard-working, like-minded people. It's a place where I've met some of the most important people in my life, and collected most important soft skills for the rest of my career.",
+					],
+					photoTop: '/resources/photos/about/photo-about-esn-1a.jpg',
+					photoBottom: '/resources/photos/about/photo-about-esn-1b.jpg',
 				},
 				{
 					title: 'Representation',
@@ -176,12 +204,16 @@ const profile = {
 						['blue', 'Zagreb'],
 						['orange', 'Debrecen'],
 					],
-					description: ["I'm Marko", "I'm Marko", "I'm Marko"],
-					photoTop: '/resources/photos/about/photo-about-esn-2a.png',
-					photoBottom: '/resources/photos/about/photo-about-esn-2b.png',
+					description: [
+						'Having learnt a lot about inner structure and operational flows of local section during my first year, I ended up applying and being elected as the president of ESN Zagreb.',
+						"I've never led anything in my life before. That's why this was in a way both me leaving my comfort zone forever behind, and deciding to accept more challenges and responsibilities that come my way. Now looking back on it I would say it certainly paid off.",
+						'Representing my organisation ment staying in touch with main partners, both institutional (University) and corporate,  being a voice of the section on inner local, national and international ESN events, and keeping communication with some other student organizations and stakeholders in Zagreb. The pandemic kinda ruined my plans for the second part of the mandate, but overall it was a very interesting experience - and I was ready for new challenges.',
+					],
+					photoTop: '/resources/photos/about/photo-about-esn-2a.jpg',
+					photoBottom: '/resources/photos/about/photo-about-esn-2b.jpg',
 				},
 				{
-					title: 'Bussiness & Finance',
+					title: 'Business & Finance',
 					tags: [
 						['gray', 'Jul 2021 - Jun 2022'],
 						['blue', 'Zagreb'],
@@ -189,9 +221,13 @@ const profile = {
 						['orange', 'Appenzell'],
 						['orange', 'Bucharest'],
 					],
-					description: ["I'm Marko", "I'm Marko", "I'm Marko"],
-					photoTop: '/resources/photos/about/photo-about-esn-3a.png',
-					photoBottom: '/resources/photos/about/photo-about-esn-3b.png',
+					description: [
+						"During my third year in ESN I've dabbled in the field of HR in ESN Zagreb, and was maintaining website of ESN Croatia. At the end of that year I've decided I want something different - and applied for Treasurer position of ESN Croatia.",
+						"Since I've already started my freelancing journey, I figured out it would be a fun new adventure to get more experience with finances, accounting and partnerships. By then everyone already knew I absolutely love creating spreadsheets, so they trusted me with this role which mainly involved creating and constantly reiterating a budget, keeping track of all income & expenses, and reporting all this to the rest of the network.",
+						"Moreover, I've had lots of opportunity to travel to various international ESN events, out of which Business & Finance Conferences were main point of gathering information, sharing knowledge and networking with treasures and partnership managers from other countries.",
+					],
+					photoTop: '/resources/photos/about/photo-about-esn-3a.jpg',
+					photoBottom: '/resources/photos/about/photo-about-esn-3b.jpg',
 				},
 				{
 					title: 'Facilitation',
@@ -203,9 +239,13 @@ const profile = {
 						['green', 'Osijek'],
 						['orange', 'Porto'],
 					],
-					description: ["I'm Marko", "I'm Marko", "I'm Marko"],
-					photoTop: '/resources/photos/about/photo-about-esn-4a.png',
-					photoBottom: '/resources/photos/about/photo-about-esn-4b.png',
+					description: [
+						"Throughout my time in ESN I've had quite a lot of opportunities to manage different groups of people. Sometimes it was necessary to schedule and lead assemblies, meetings or calls. In other situations it was more practical, like planning and facilitating trainings or workshops.",
+						"Some of the more important skills I've developed through all this are proper preparation and time management. I've learnt about the importance of having a structured agenda, but also know how to read the situation and be flexible if neccesary. It is an area I've probably grew the most at during these years. I belive the experience gained is invaluable, especially in such a diverse, multicultural and dynamic environment.",
+						'Specific workshop to showcase would be the one about my Comba project during the biggest ESN event in Porto.  Together with my colleges we brainstormed an idea, prepared the materials, and moderated the workshop with 20 participants where we gathered some great feedback!',
+					],
+					photoTop: '/resources/photos/about/photo-about-esn-4a.jpg',
+					photoBottom: '/resources/photos/about/photo-about-esn-4b.jpg',
 				},
 			],
 		},
